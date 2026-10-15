@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flexbox Documentation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav id="navbar">
+        <header>CSS Flexbox Guide</header>
+        <a class="nav-link" href="#Introduction_to_Flexbox">Introduction to Flexbox</a>
+        <a class="nav-link" href="#Flex_Container">Flex Container</a>
+        <a class="nav-link" href="#Flex_Items">Flex Items</a>
+        <a class="nav-link" href="#Align_Items">Align Items</a>
+        <a class="nav-link" href="#Media_Queries">Media Queries</a>
+    </nav>
+
+    <main id="main-doc">
+        <section class="main-section" id="Introduction_to_Flexbox">
+            <header>Introduction to Flexbox</header>
+            <p>The Flexible Box Layout, commonly known as Flexbox, is a CSS3 web layout model.</p>
+            <p>It provides a more efficient way to lay out, align, and distribute space among items in a container.</p>
+            <code>display: flex;</code>
+            <ul>
+                <li>One-dimensional layout model</li>
+                <li>Improves responsiveness</li>
+            </ul>
+        </section>
+
+        <section class="main-section" id="Flex_Container">
+            <header>Flex Container</header>
+            <p>To start using Flexbox, you need to define a flex container.</p>
+            <p>Any parent element can be turned into a flex container by setting its display property.</p>
+            <code>.container { display: flex; }</code>
+            <ul>
+                <li>Acts as the parent wrapper</li>
+            </ul>
+        </section>
+
+        <section class="main-section" id="Flex_Items">
+            <header>Flex Items</header>
+            <p>Children elements directly inside a flex container automatically become flex items.</p>
+            <p>They can be manipulated using various flex properties like flex-grow and flex-shrink.</p>
+            <code>flex: 1;</code>
+            <ul>
+                <li>Direct children of the container</li>
+            </ul>
+        </section>
+
+        <section class="main-section" id="Align_Items">
+            <header>Align Items</header>
+            <p>The align-items property sets the align self value on all direct children as a group.</p>
+            <p>It aligns items along the cross axis of the flex container.</p>
+            <code>align-items: center;</code>
+            <ul>
+                <li>Aligns along cross-axis</li>
+            </ul>
+        </section>
+
+        <section class="main-section" id="Media_Queries">
+            <header>Media Queries</header>
+            <p>Media queries are a key part of responsive web design in CSS.</p>
+            <p>They allow you to apply CSS styles depending on device characteristics like width.</p>
+            <code>@media (max-width: 768px) { ... }</code>
+            <ul>
+                <li>Ensures mobile responsiveness</li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>

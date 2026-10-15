@@ -1,0 +1,109 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa;
+  color: #333333;
+}
+
+/* Navbar fixa à esquerda para dispositivos normais (História 14 / Teste 21) */
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 280px;
+  height: 100%;
+  background-color: #ffffff;
+  border-right: 1px solid #e0e0e0;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+#navbar header {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 20px;
+  color: #1a365d;
+  border-bottom: 1px solid #eee;
+}
+
+.nav-link {
+  display: block;
+  padding: 12px 20px;
+  color: #4a5568;
+  text-decoration: none;
+  border-bottom: 1px solid #f0f0f0;
+  transition: background 0.2s;
+}
+
+.nav-link:hover {
+  background-color: #edf2f7;
+  color: #2b6cb0;
+}
+
+/* Conteúdo principal empurrado para a direita para não ficar por baixo da navbar */
+#main-doc {
+  margin-left: 280px;
+  padding: 40px;
+  max-width: 900px;
+}
+
+.main-section {
+  margin-bottom: 40px;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.main-section header {
+  font-size: 24px;
+  font-weight: bold;
+  color: #2b6cb0;
+  margin-bottom: 15px;
+}
+
+p {
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+code {
+  display: block;
+  background-color: #edf2f7;
+  padding: 10px 15px;
+  border-left: 4px solid #3182ce;
+  font-family: monospace;
+  margin: 15px 0;
+  border-radius: 4px;
+}
+
+ul {
+  margin: 15px 0 0 20px;
+}
+
+li {
+  margin-bottom: 5px;
+  line-height: 1.5;
+}
+
+/* Media Query obrigatória (História 15 / Teste 22) para dispositivos móveis */
+@media (max-width: 768px) {
+  #navbar {
+    position: relative;
+    width: 100%;
+    height: auto;
+    border-right: none;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  #main-doc {
+    margin-left: 0;
+    padding: 20px;
+  }
+}
